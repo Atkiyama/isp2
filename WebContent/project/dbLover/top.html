@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>DBLover</title>
+	<link rel="stylesheet" type="text/css" href="top.css"/>
+</head>
+<body>
+  <h1>DBLover</h1>
+  	DBLoverへようこそ！このWebアプリケーションではデータを作成したり既存のCSVファイルを読み込んでそのデータを簡単に編集、検索、ソートを行うことができます。
+		新しくデータを作成する場合は表の縦、横の長さとそのファイル名を設定して編集ボタンをクリックしてください。一度作成したデータベースを編集する場合はファイル名を入力してから編集ボタンをクリックしてください。リセットボタンをクリックすると入力したものを全消去できます。
+		<hr>
+	<div>
+		<form method="post" action="edit">
+		   <input type="radio" name="keishiki" value="self" class="radio" />  縦  <input id="height" type="number" size="10" name="height"/> 横  <input id="width" type="number" size="10" name="width"/> <br>
+		   <input type="radio" name="keishiki" value="read" class="radio" /> CSVファイル名 <input id="csvName" type="text" name="csvName"/> .csv <br>
+		   <button id="edit_button" type="submit" value="edit">編集</button>
+		   <input type="reset" value="リセット" class="button" />
+	  </form>
+	</div>
+</body>
+</html>

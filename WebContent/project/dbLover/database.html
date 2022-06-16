@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Database</title>
+	<script type="text/javascript" src="database.js"></script>
+	<link rel="stylesheet" type="text/css" href="database.css"/>
+</head>
+<body>
+  <h1>DBLover</h1>
+	<h2>DBLoverの使い方</h2>
+データの入力蘭にデータを入力してデータを編集できます。+ボタンや-ボタンを押すと行や列を増減できます。データを検索したい場合は検索ボックスに検索したいものを入力して検索ボタンを押して下さい。該当するものが全て表示されます。ソートしたい場合はソートする列と降順、昇順を選択してからソートボタンを押して下さい。データを保存する場合は保存ボタンを押してください。
+<h3>注意！</h3>
+<ul>
+<li>データを保存する場合は必ず保存ボタンを押してください。閉じるボタンを押してもデータは保存されませんので注意して下さい。
+<li>データを編集するときは定期的に保存しておくことを推奨します。
+<li>セミコロン「;」やコンマ「,」を連続して使用しないでください。データの処理が正常に出来なくなります。
+<li>環境によっては検索やソートの結果が一回で反映されないことがあります。その場合はもう一度お試しください。
+</ul>
+<hr>
+	<div>
+		<input id="search" type="text"/>
+    <button id="search_button">検索</button>
+    <br>
+
+    <form id="sort_type">ソート <input id="sort" type="number" size=10/> 列目を <input name="sort_type" type="radio" value="descending"/>降順 <input name="sort_type" type="radio" value="ascending"/>昇順 でソート <button id="sort_button">ソート</button> </form>
+
+保存するCSVファイル名 <input id="name" type="text" size=10/> .csv <button id="save_button">保存</button>
+<br>
+<form method="post" action="close">
+<button id="close_button" type="submit" value="close">閉じる</button>
+</form>
+<br>
+行<button id="column_plus_button">+</button>
+<button id="column_minus_button">-</button>
+<br>
+列<button id="row_plus_button">+</button>
+<button id="row_minus_button">-</button>
+<br>
+<br>
+<div id="searchResult">
+</div>
+
+<hr>
+
+  <div id="database">
+	</div>
+
+</body>
+</html>

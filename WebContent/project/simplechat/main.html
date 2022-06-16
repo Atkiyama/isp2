@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Simple Chat</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<h1>Simple Chat</h1>
+	<hr/>
+	<div id="conversation">
+		<table id="statement_list">
+			<tr>
+				<td>Test:</td>
+				<td>Hogehoge</td>
+			</tr>
+		</table>
+	</div>
+	<hr/>
+	<div id="menu_bar">
+		<div id="name_area">
+			Name: <span id="name"></span>
+		</div>
+		<div id="message_area">
+			<label for="message">Message:</label>
+			<input id="message" type="text"/>
+		</div>
+		<div id="send_button_area">
+			<button id="send_button">Send</button>
+		</div>
+		<div id="end_button_area">
+			<form method="post" action="end">
+				<input id="end_button" type="submit" value="End"/>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

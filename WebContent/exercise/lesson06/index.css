@@ -1,0 +1,20 @@
+body {
+  background-color: LightYellow;
+}
+.input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 24px;
+}
+.output{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 24px;
+}
+#output{
+  color: red;
+}
