@@ -1,0 +1,81 @@
+body {
+    width: 95%;
+	text-align: center;
+}
+
+#page {
+	width: 720px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+	text-align: left;
+}
+
+#header {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 720px;
+    height: 24px;
+	margin: 0px;
+	padding: 4px;
+	background-color: silver;
+ 	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	line-height: 24px;
+}
+
+#header-username_area {
+	float: left;
+}
+
+#header-logout_button_area {
+	float: right;
+}
+
+#header-login_button_area {
+	float: right;
+}
+
+#login_dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 344px;
+	height: 48px;
+	margin-left: -172px;
+	margin-top: -24px;
+	padding: 8px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	text-align: left;
+}
+
+
+#login_dialog-cancel_button_area {
+	float: right;
+}
+
+#login_dialog-login_button_area {
+	float: right;
+}
+
+#logout_dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 344px;
+	height: 48px;
+	margin-left: -172px;
+	margin-top: -24px;
+	padding: 8px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	text-align: center;
+}
+
+#logout_dialog-close_button_area {
+	float: right;
+}

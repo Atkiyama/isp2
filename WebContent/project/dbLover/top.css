@@ -1,0 +1,15 @@
+body {
+    width: 95%;
+    background-color: LightYellow;
+    overflow-x:auto;
+}
+
+#database{
+    overflow-x:scroll;
+    white-space: nowrap;
+}
+
+#searchResult{
+    overflow-x:scroll;
+    white-space: nowrap;
+}

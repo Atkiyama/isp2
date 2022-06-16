@@ -1,0 +1,92 @@
+body {
+    width: 95%;
+	text-align: center;
+}
+
+.page {
+	width: 720px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+	text-align: left;
+}
+
+#login_form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 344px;
+	height: 48px;
+	margin-left: -172px;
+	margin-top: -24px;
+	padding: 8px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	text-align: left;
+}
+
+#login_form_username_heading {
+	width: 64px;
+}
+
+#login_form_username_field {
+	width: 256px;
+}
+
+#login_form_submit {
+	width: 64px;
+}
+
+#navigation {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 720px;
+    height: 32px;
+	margin: 0;
+	padding: 0;
+	background-color: silver;
+    text-align: left;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+#navigation_user_name {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 600px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	background-color: silver;
+	text-align: left;
+}
+
+#navigation_logout_form {
+	position: relative;
+	left: 600px;
+	top: -32px;
+	width: 120px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	background-color: silver;
+	text-align: right;
+}
+
+#logout_box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 344px;
+	height: 48px;
+	margin-left: -172px;
+	margin-top: -24px;
+	padding: 8px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	text-align: center;
+}
