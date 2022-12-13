@@ -56,5 +56,10 @@ For compilers to find openjdk@11 you may need to set:
 % source ~/.zshrc
 
 ```
+#### 実行方法
 
-
+以下のコマンドでサーバーを立てます
+``` sh : grepVer3.sh
+java -cp "lib/*:bin" server.AppAerver 8080 /isp2 WebContent
+```
+その後 http://localhost:8080/isp2/project.dbLover/top.html にアクセスして下さい
