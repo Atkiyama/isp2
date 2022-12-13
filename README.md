@@ -1,6 +1,8 @@
 # DBLover
 
-
+##
+注意事項
+本アプリケーションは現環境では動作しない
 
 ## このアプリケーションについて
 
@@ -11,7 +13,7 @@ CSVファイルのような表データを作成,整理できるようなデー�
 
 使用言語は以下のものです。
 
-- OS:MAC OS(Moneterey 12.6.1)
+- OS:MAC OS(HighSierra)
 - 開発言語:Java(Spring boot) JavaScript
 
 ## 　機能について
@@ -58,8 +60,17 @@ For compilers to find openjdk@11 you may need to set:
 ```
 #### 実行方法
 
+*現在整備中です
+
 コンパイル後srcディレクトリに移動以下のコマンドでサーバーを立てます
 ``` sh : grepVer3.sh
+rm WebContent/WEB-INF/classes/server/*
+rm WebContent/WEB-INF/classes/project/dbLover/*
+rm bin/server/*         
+rm bin/project/dbLover/*
+javac -d bin -cp "lib/*" src/project/dbLover/*.java
+javac -d bin -cp "lib/*" src/server/*.java
+javac -d WebContent/WEB-INF/classes -cp "lib/*" src/project/dbLover/*.java    
 java -cp "lib/*:bin" server.AppServer 8080 /isp2 WebContent
 ```
 その後 [http://localhost:8080/isp2/project/dbLover/top.html](http://localhost:8080/isp2/project/dbLover/top.html) にアクセスして下さい
